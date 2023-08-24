@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import SignupPage from './container/Signup';
+import Signup from './container/Signup';
+import Signin from './container/Signin';
 import UnderDev from './component/underDev';
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<UnderDev />} />
-          <Route path='/sign-up' element={<SignupPage />} />
+          <Route path='/sign-up' element={<Signup />} />
+          <Route path='/sign-in' element={<Signin />} />
         </Routes>
       </Router>
     </>
