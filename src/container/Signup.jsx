@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-export default function SignupPage() {
+export default function Signup() {
 
 	return (
 		<>
