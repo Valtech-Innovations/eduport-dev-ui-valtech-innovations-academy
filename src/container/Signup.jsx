@@ -96,6 +96,26 @@ export default function Signup() {
                           />
                         </div>
                       </div>
+                      {/* Mobile Number */}
+                      <div className="mb-4">
+                        <label
+                          htmlFor="exampleInputEmail1"
+                          className="form-label"
+                        >
+                          Mobile Number *
+                        </label>
+                        <div className="input-group input-group-lg">
+                          <span className="input-group-text bg-light rounded-start border-0 text-secondary px-3">
+                            <i className="bi bi-envelope-fill"></i>
+                          </span>
+                          <input
+                            type="number"
+                            className="form-control border-0 bg-light rounded-end ps-1"
+                            placeholder="Mobile number"
+                            id="exampleInputMobileNumber"
+                          />
+                        </div>
+                      </div>
                       {/* <!-- Password --> */}
                       <div className="mb-4">
                         <label htmlFor="inputPassword5" className="form-label">
