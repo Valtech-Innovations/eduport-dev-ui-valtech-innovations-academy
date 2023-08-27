@@ -89,9 +89,9 @@ export default function Signup() {
                             <i className="bi bi-envelope-fill"></i>
                           </span>
                           <input
-                            type="email / number"
+                            type="email"
                             className="form-control border-0 bg-light rounded-end ps-1"
-                            placeholder="E-mail/ Mobile number"
+                            placeholder="E-mail"
                             id="exampleInputEmail1"
                           />
                         </div>

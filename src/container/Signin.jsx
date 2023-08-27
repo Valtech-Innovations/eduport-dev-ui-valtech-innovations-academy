@@ -1,3 +1,6 @@
+import React from "react";
+
+import { Link } from "react-router-dom";
 export default function Signin() {
   return (
     <>
@@ -68,7 +71,10 @@ export default function Signin() {
 
                     <form>
                       <div className="mb-4">
-                        <label htmlFor="exampleInputEmail1" className="form-label">
+                        <label
+                          htmlFor="exampleInputEmail1"
+                          className="form-label"
+                        >
                           Email address *
                         </label>
                         <div className="input-group input-group-lg">
@@ -117,19 +123,16 @@ export default function Signin() {
                           </label>
                         </div>
                         <div className="text-primary-hover">
-                          <a
-                            href="forgot-password.html"
-                            className="text-secondary"
-                          >
+                          <Link to="/forget-password">
                             <u>Forgot password?</u>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                       <div className="align-items-center mt-0">
                         <div className="d-grid">
                           <button
                             className="btn btn-primary mb-0"
-                            type="button"
+                            type="submit"
                           >
                             Login
                           </button>
