@@ -1,51 +1,153 @@
 import React from "react";
 // import '../public/assets/css/style.css';
 
-
-
 const Course = () => {
   return (
     <main>
-      <section className="bg-light py-0 py-sm-5">
+      
+      <section className="bg-blue py-7">
         <div className="container">
-          <div className="row py-5">
+          <div className="row justify-content-lg-between">
             <div className="col-lg-8">
-              {/* <!-- Badge --> */}
-              <h6 className="mb-3 font-base bg-primary text-white py-2 px-4 rounded-2 d-inline-block">
-                Digital Marketing
-              </h6>
               {/* <!-- Title --> */}
-              <h1>The Complete Digital Marketing Course - 12 Courses in 1</h1>
-              <p>
+              <h1 className="text-white">
+                The Complete Digital Marketing Course - 12 Courses in 1
+              </h1>
+              <p className="text-white">
                 Satisfied conveying a dependent contented he gentleman agreeable
                 do be. Warrant private blushes removed an in equally totally if.
                 Delivered dejection necessary objection do Mr prevailed. Mr
                 feeling does chiefly cordial in do.
               </p>
+
               {/* <!-- Content --> */}
-              <ul className="list-inline mb-0">
-                <li className="list-inline-item h6 me-3 mb-1 mb-sm-0">
-                  <i className="fas fa-star text-warning me-2"></i>4.5/5.0
+              <ul className="list-inline mb-5">
+                <li className="list-inline-item h6 me-4 mb-1 mb-sm-0 text-white">
+                  <span className="fw-light">By</span> Lori Stevens
                 </li>
-                <li className="list-inline-item h6 me-3 mb-1 mb-sm-0">
-                  <i className="fas fa-user-graduate text-orange me-2"></i>12k
-                  Enrolled
+                <li className="list-inline-item me-4 mb-1 mb-sm-0">
+                  <ul className="list-inline mb-0">
+                    <li className="list-inline-item me-0 small">
+                      <i className="fas fa-star text-warning"></i>
+                    </li>
+                    <li className="list-inline-item me-0 small">
+                      <i className="fas fa-star text-warning"></i>
+                    </li>
+                    <li className="list-inline-item me-0 small">
+                      <i className="fas fa-star text-warning"></i>
+                    </li>
+                    <li className="list-inline-item me-0 small">
+                      <i className="fas fa-star text-warning"></i>
+                    </li>
+                    <li className="list-inline-item me-0 small">
+                      <i className="fas fa-star-half-alt text-warning"></i>
+                    </li>
+                    <li className="list-inline-item ms-2 h6 text-white">
+                      4.5/5.0
+                    </li>
+                    <li className="list-inline-item text-white">
+                      (1,586 reviews)
+                    </li>
+                  </ul>
                 </li>
-                <li className="list-inline-item h6 me-3 mb-1 mb-sm-0">
-                  <i className="fas fa-signal text-success me-2"></i>All levels
-                </li>
-                <li className="list-inline-item h6 me-3 mb-1 mb-sm-0">
-                  <i className="bi bi-patch-exclamation-fill text-danger me-2"></i>
-                  Last updated 09/2021
-                </li>
-                <li className="list-inline-item h6 mb-0">
+                <li className="list-inline-item h6 mb-0 text-white">
                   <i className="fas fa-globe text-info me-2"></i>English
                 </li>
               </ul>
             </div>
+
+            <div className="col-lg-3">
+              <h6 className="text-white lead fw-light mb-3">
+                <i className="fas fa-user-graduate text-orange me-2"></i>12,155
+                already enrolled
+              </h6>
+              {/* <!-- Button --> */}
+              <a href="#" className="btn btn-warning mb-3 w-100">
+                Enroll Course
+              </a>
+
+              {/* <!-- Progress item --> */}
+              <div className="overflow-hidden mb-4">
+                <h6 className="text-white">Your Progress</h6>
+                <div className="progress progress-sm bg-white bg-opacity-10 mb-1">
+                  <div
+                    className="progress-bar bg-white aos"
+                    role="progressbar"
+                    data-aos="slide-right"
+                    data-aos-delay="200"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    style={{ width: "25%" }}
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <small className="text-white">08 of 135 Completed</small>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+      <section class="pb-0 py-lg-5">
+	  		<div class="container">
+				  
+					{/* <!-- Main content START --> */}
+					<div class="col-lg-8">
+						<div class="card shadow rounded-2 p-0">
+							{/* <!-- Tabs START --> */}
+							<div class="card-header border-bottom px-4 py-3">
+								<ul class="nav nav-pills nav-tabs-line py-0" id="course-pills-tab" role="tablist">
+									{/* <!-- Tab item --> */}
+									<li class="nav-item me-2 me-sm-4" role="presentation">
+										<button class="nav-link mb-2 mb-md-0 active" id="course-pills-tab-1"
+											data-bs-toggle="pill" data-bs-target="#course-pills-1" type="button"
+											role="tab" aria-controls="course-pills-1"
+											aria-selected="true">Overview</button>
+									</li>
+									{/* <!-- Tab item --> */}
+									<li class="nav-item me-2 me-sm-4" role="presentation">
+										<button class="nav-link mb-2 mb-md-0" id="course-pills-tab-2"
+											data-bs-toggle="pill" data-bs-target="#course-pills-2" type="button"
+											role="tab" aria-controls="course-pills-2"
+											aria-selected="false">Curriculum</button>
+									</li>
+									{/* <!-- Tab item --> */}
+									<li class="nav-item me-2 me-sm-4" role="presentation">
+										<button class="nav-link mb-2 mb-md-0" id="course-pills-tab-3"
+											data-bs-toggle="pill" data-bs-target="#course-pills-3" type="button"
+											role="tab" aria-controls="course-pills-3"
+											aria-selected="false">Instructor</button>
+									</li>
+									{/* <!-- Tab item --> */}
+									<li class="nav-item me-2 me-sm-4" role="presentation">
+										<button class="nav-link mb-2 mb-md-0" id="course-pills-tab-4"
+											data-bs-toggle="pill" data-bs-target="#course-pills-4" type="button"
+											role="tab" aria-controls="course-pills-4"
+											aria-selected="false">Reviews</button>
+									</li>
+									{/* <!-- Tab item --> */}
+									<li class="nav-item me-2 me-sm-4" role="presentation">
+										<button class="nav-link mb-2 mb-md-0" id="course-pills-tab-5"
+											data-bs-toggle="pill" data-bs-target="#course-pills-5" type="button"
+											role="tab" aria-controls="course-pills-5" aria-selected="false">FAQs
+										</button>
+									</li>
+									{/* <!-- Tab item --> */}
+									<li class="nav-item me-2 me-sm-4" role="presentation">
+										<button class="nav-link mb-2 mb-md-0" id="course-pills-tab-6"
+											data-bs-toggle="pill" data-bs-target="#course-pills-6" type="button"
+											role="tab" aria-controls="course-pills-6"
+											aria-selected="false">Comment</button>
+									</li>
+								</ul>
+							</div>
+							{/* <!-- Tabs END --> */}
+              </div>
+            </div>
+           </div>
+           </section>
 
       <div className="card-body p-4">
         <div className="tab-content pt-2" id="course-pills-tabContent">
@@ -1596,7 +1698,7 @@ const Course = () => {
                     />
                     <label
                       className="btn btn-outline-light btn-sm mb-0"
-                      for="btnradio1"
+                      htmlFor="btnradio1"
                     >
                       <i className="far fa-thumbs-up me-1"></i>25
                     </label>
@@ -1609,7 +1711,7 @@ const Course = () => {
                     />
                     <label
                       className="btn btn-outline-light btn-sm mb-0"
-                      for="btnradio2"
+                      htmlFor="btnradio2"
                     >
                       {" "}
                       <i className="far fa-thumbs-down me-1"></i>2
@@ -1703,7 +1805,7 @@ const Course = () => {
                     />
                     <label
                       className="btn btn-outline-light btn-sm mb-0"
-                      for="btnradio3"
+                      htmlFor="btnradio3"
                     >
                       <i className="far fa-thumbs-up me-1"></i>25
                     </label>
@@ -1716,7 +1818,7 @@ const Course = () => {
                     />
                     <label
                       className="btn btn-outline-light btn-sm mb-0"
-                      for="btnradio4"
+                      htmlFor="btnradio4"
                     >
                       {" "}
                       <i className="far fa-thumbs-down me-1"></i>2
