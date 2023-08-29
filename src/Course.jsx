@@ -92,7 +92,7 @@ const Course = () => {
 
       <section class="pb-0 py-lg-5">
 	  		<div class="container">
-				  
+        <div class="row">
 					{/* <!-- Main content START --> */}
 					<div class="col-lg-8">
 						<div class="card shadow rounded-2 p-0">
@@ -144,12 +144,10 @@ const Course = () => {
 								</ul>
 							</div>
 							{/* <!-- Tabs END --> */}
-              </div>
-            </div>
-           </div>
-           </section>
+              
 
-      <div className="card-body p-4">
+
+           <div className="card-body p-4">
         <div className="tab-content pt-2" id="course-pills-tabContent">
           {/* <!-- Content START --> */}
           <div
@@ -2321,7 +2319,14 @@ const Course = () => {
           {/* <!-- Content END --> */}
         </div>
       </div>
-    </main>
+      </div>
+            </div>
+           </div>
+           </div>
+    </section>
+           </main>
+
+      
   );
 };
 
