@@ -5,6 +5,7 @@ import Header from './component/layout/Header'
 import Banner from './component/layout/Banner'
 import Action from './component/layout/Action'
 import Footer from './component/layout/Footer'
+import Feedback from './component/layout/Feedback'
 import UnderDev from './component/underDev';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path='/banner' element={<Banner />} />
           <Route path='/action' element={<Action />} />
           <Route path='/footer' element={<Footer />} />
+          <Route path='/feedback' element={<Feedback />} />
         </Routes>
       </Router>
     </>
