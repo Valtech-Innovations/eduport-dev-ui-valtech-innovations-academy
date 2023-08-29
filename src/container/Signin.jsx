@@ -1,7 +1,13 @@
 import React from "react";
-
+import {useForm} from "react-hook-form"
 import { Link } from "react-router-dom";
 export default function Signin() {
+  const { register, handleSubmit, reset } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+    reset();
+  };
   return (
     <>
       <main>
@@ -69,7 +75,7 @@ export default function Signin() {
                       Nice to see you! Please log in with your account.
                     </p>
 
-                    <form>
+                    <form onSubmit={handleSubmit(onSubmit)}>
                       <div className="mb-4">
                         <label
                           htmlFor="exampleInputEmail1"
@@ -86,6 +92,7 @@ export default function Signin() {
                             className="form-control border-0 bg-light rounded-end ps-1"
                             placeholder="E-mail / Mobile Number"
                             id="exampleInputEmail1"
+                            {...register("email/number",{required:true})}
                           />
                         </div>
                       </div>
@@ -102,6 +109,7 @@ export default function Signin() {
                             className="form-control border-0 bg-light rounded-end ps-1"
                             placeholder="password"
                             id="inputPassword5"
+                            {...register("password",{required:true})}
                           />
                         </div>
                         <div id="passwordHelpBlock" className="form-text">

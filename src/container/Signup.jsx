@@ -1,5 +1,27 @@
-import React, { useEffect } from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { responsivePropType } from "react-bootstrap/esm/createUtilityClasses";
+import { useForm } from "react-hook-form";
 export default function Signup() {
+  const[formData , setFormData] = useState([])
+  const { register, handleSubmit, reset } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+    setFormData({...formData,data})
+    reset();
+  };
+  console.log("form data is: ",formData)
+  useEffect(()=>{
+    axios.post("",formData)
+    .then((response)=>{
+      console.log("response is: ",response.data)
+    })
+    .catch((err)=>{
+      console.log("Some error occured...",err)
+    })
+  })
+
   return (
     <>
       <main>
@@ -75,7 +97,7 @@ export default function Signup() {
                     </p>
 
                     {/* <!-- Form START --> */}
-                    <form>
+                    <form onSubmit={handleSubmit(onSubmit)}>
                       {/* <!-- Email --> */}
                       <div className="mb-4">
                         <label
@@ -93,6 +115,7 @@ export default function Signup() {
                             className="form-control border-0 bg-light rounded-end ps-1"
                             placeholder="E-mail"
                             id="exampleInputEmail1"
+                            {...register("email", { required: true })}
                           />
                         </div>
                       </div>
@@ -113,6 +136,7 @@ export default function Signup() {
                             className="form-control border-0 bg-light rounded-end ps-1"
                             placeholder="Mobile number"
                             id="exampleInputMobileNumber"
+                            {...register("Mobile Number")}
                           />
                         </div>
                       </div>
@@ -130,6 +154,7 @@ export default function Signup() {
                             className="form-control border-0 bg-light rounded-end ps-1"
                             placeholder="*********"
                             id="inputPassword5"
+                            {...register("password", { required: true })}
                           />
                         </div>
                       </div>
@@ -147,6 +172,9 @@ export default function Signup() {
                             className="form-control border-0 bg-light rounded-end ps-1"
                             placeholder="*********"
                             id="inputPassword6"
+                            {...register("Confirm password", {
+                              required: true,
+                            })}
                           />
                         </div>
                       </div>
@@ -172,7 +200,7 @@ export default function Signup() {
                         <div className="d-grid">
                           <button
                             className="btn btn-primary mb-0"
-                            type="button"
+                            type="submit"
                           >
                             Sign Up
                           </button>
@@ -200,8 +228,8 @@ export default function Signup() {
                       {/* <!-- Social btn --> */}
                       <div className="col-xxl-6 d-grid">
                         <a href="#" className="btn bg-facebook mb-0">
-						<i className="fab fa-brands fa-github text-white me-2"></i>Signup
-                          with GitHub
+                          <i className="fab fa-brands fa-github text-white me-2"></i>
+                          Signup with GitHub
                         </a>
                       </div>
                     </div>

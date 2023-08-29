@@ -1,5 +1,12 @@
 import React from "react";
+
+import { useForm } from "react-hook-form";
 const ForgetPassword = () => {
+  const { register, handleSubmit, reset } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+  };
   return (
     <div>
       <main>
@@ -68,7 +75,7 @@ const ForgetPassword = () => {
                     </h5>
 
                     {/* <!-- Form START --> */}
-                    <form>
+                    <form onSubmit={handleSubmit(onSubmit)}>
                       {/* <!-- Email --> */}
                       <div class="mb-4">
                         <label htmlFor="exampleInputEmail1" class="form-label">
@@ -79,17 +86,18 @@ const ForgetPassword = () => {
                             <i class="bi bi-envelope-fill"></i>
                           </span>
                           <input
-                            type="email/ Mobile Number"
+                            type="email/number "
                             class="form-control border-0 bg-light rounded-end ps-1"
-                            placeholder="E-mail"
+                            placeholder="E-mail / Mobile Number"
                             id="exampleInputEmail1"
+                            {...register("email/mobile number",{required:true})}
                           />
                         </div>
                       </div>
                       {/* <!-- Button --> */}
                       <div class="align-items-center">
                         <div class="d-grid">
-                          <button class="btn btn-primary mb-0" type="button">
+                          <button class="btn btn-primary mb-0" type="submit">
                             Reset password
                           </button>
                         </div>
