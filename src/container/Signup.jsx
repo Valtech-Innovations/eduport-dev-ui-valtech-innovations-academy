@@ -88,18 +88,18 @@ export default function Signup() {
 
               {/* <!-- Right --> */}
               <div className="col-12 col-lg-6 m-auto">
-                <div className="row my-5">
+                <div className="row my-5 mt-3">
                   <div className="col-sm-10 col-xl-8 m-auto">
                     {/* <!-- Title --> */}
                     <h2>Sign up for your account!</h2>
-                    <p className="lead mb-4">
+                    <p className="lead mb-2">
                       Nice to see you! Please Sign up with your account.
                     </p>
 
                     {/* <!-- Form START --> */}
                     <form onSubmit={handleSubmit(onSubmit)}>
                       {/* <!-- Email --> */}
-                      <div className="mb-4">
+                      <div className="mb-2">
                         <label
                           htmlFor="exampleInputEmail1"
                           className="form-label"
@@ -112,7 +112,7 @@ export default function Signup() {
                           </span>
                           <input
                             type="email"
-                            className="form-control border-0 bg-light rounded-end ps-1"
+                            className="form-control border-0 bg-light rounded-end ps-1 m-0 "
                             placeholder="E-mail"
                             id="exampleInputEmail1"
                             {...register("email", { required: true })}
@@ -120,7 +120,7 @@ export default function Signup() {
                         </div>
                       </div>
                       {/* Mobile Number */}
-                      <div className="mb-4">
+                      <div className="mb-2">
                         <label
                           htmlFor="exampleInputEmail1"
                           className="form-label"
@@ -141,7 +141,7 @@ export default function Signup() {
                         </div>
                       </div>
                       {/* <!-- Password --> */}
-                      <div className="mb-4">
+                      <div className="mb-2">
                         <label htmlFor="inputPassword5" className="form-label">
                           Password *
                         </label>
@@ -159,7 +159,7 @@ export default function Signup() {
                         </div>
                       </div>
                       {/* <!-- Confirm Password --> */}
-                      <div className="mb-4">
+                      <div className="mb-2">
                         <label htmlFor="inputPassword6" className="form-label">
                           Confirm Password *
                         </label>
@@ -179,7 +179,7 @@ export default function Signup() {
                         </div>
                       </div>
                       {/* <!-- Check box --> */}
-                      <div className="mb-4">
+                      <div className="mb-2">
                         <div className="form-check">
                           <input
                             type="checkbox"
@@ -196,7 +196,7 @@ export default function Signup() {
                         </div>
                       </div>
                       {/* <!-- Button --> */}
-                      <div className="align-items-center mt-0">
+                      <div className="align-items-center mt-0 mb-0">
                         <div className="d-grid">
                           <button
                             className="btn btn-primary mb-0"
@@ -212,7 +212,7 @@ export default function Signup() {
                     {/* <!-- Social buttons --> */}
                     <div className="row">
                       {/* <!-- Divider with text --> */}
-                      <div className="position-relative my-4">
+                      <div className="position-relative my-4 mt-0 mb-0">
                         <hr />
                         <p className="small position-absolute top-50 start-50 translate-middle bg-body px-5">
                           Or
@@ -235,7 +235,7 @@ export default function Signup() {
                     </div>
 
                     {/* <!-- Sign up link --> */}
-                    <div className="mt-4 text-center">
+                    <div className="mt-2 text-center">
                       <span>
                         Already have an account?
                         <a href="sign-in.html"> Sign in here</a>
