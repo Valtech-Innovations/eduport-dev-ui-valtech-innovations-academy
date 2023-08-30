@@ -3,7 +3,7 @@ import Signup from './container/Signup';
 // import Signin from './container/Signin';
 import UnderDev from './component/underDev';
 import ForgetPassword from './container/ForgetPassword';
-import Signin from './container/SignIn';
+import Signin from './container/Signin';
 
 function App() {
 
