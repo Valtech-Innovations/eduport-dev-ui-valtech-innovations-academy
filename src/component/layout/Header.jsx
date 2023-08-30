@@ -4,22 +4,22 @@ export default function Header() {
 	return (
 		<>
 			{/* <!-- Header START --> */}
-	<div class="navbar-light navbar-sticky navbar-transparent">
+	<div className="navbar-light navbar-sticky navbar-transparent">
 		{/* <!-- Logo Nav START --> */}
-		<nav class="navbar navbar-expand-lg">
-			<div class="container">
+		<nav className="navbar navbar-expand-lg">
+			<div className="container">
 				{/* <!-- Logo START --> */}
-				<a class="navbar-brand me-0" href="index-2.html">
-					<img class="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo" />
-					<img class="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo" />
+				<a className="navbar-brand me-0" href="index-2.html">
+					<img className="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo" />
+					<img className="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo" />
 				</a>
 				{/* <!-- Logo END --> */}
 
 				{/* <!-- Responsive navbar toggler --> */}
-				<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+				<button className="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
 					data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
 					aria-label="Toggle navigation">
-					<span class="navbar-toggler-animation">
+					<span className="navbar-toggler-animation">
 						<span></span>
 						<span></span>
 						<span></span>
@@ -27,67 +27,67 @@ export default function Header() {
 				</button>
 
 				{/* <!-- Main navbar START --> */}
-				<div class="navbar-collapse collapse" id="navbarCollapse">
+				<div className="navbar-collapse collapse" id="navbarCollapse">
 
 					{/* <!-- Nav Search END --> */}
-					<ul class="navbar-nav navbar-nav-scroll ms-auto">
+					<ul className="navbar-nav navbar-nav-scroll ms-auto">
 
 						{/* <!-- Nav item 1 Demos --> */}
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle active" href="#" id="demoMenu" data-bs-toggle="dropdown"
+						<li className="nav-item dropdown">
+							<a className="nav-link dropdown-toggle active" href="#" id="demoMenu" data-bs-toggle="dropdown"
 								aria-haspopup="true" aria-expanded="false">Home</a>
-							<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="demoMenu">
-								<li> <a class="dropdown-item" href="index-2.html">Home Default</a></li>
-								<li> <a class="dropdown-item" href="index-3.html">Home Education</a></li>
-								<li> <a class="dropdown-item" href="index-4.html">Home Academy</a></li>
-								<li> <a class="dropdown-item" href="index-5.html">Home Course</a></li>
-								<li> <a class="dropdown-item" href="index-6.html">Home University</a></li>
-								<li> <a class="dropdown-item" href="index-7.html">Home Kindergarten</a></li>
-								<li> <a class="dropdown-item active" href="index-8.html">Home Landing</a></li>
-								<li> <a class="dropdown-item" href="index-9.html">Home Tutor</a></li>
-								<li> <a class="dropdown-item" href="index-10.html">Home School</a></li>
-								<li> <a class="dropdown-item" href="index-11.html">Home Abroad</a></li>
-								<li> <a class="dropdown-item" href="index-12.html">Home Workshop</a></li>
+							<ul className="dropdown-menu dropdown-menu-end" aria-labelledby="demoMenu">
+								<li> <a className="dropdown-item" href="index-2.html">Home Default</a></li>
+								<li> <a className="dropdown-item" href="index-3.html">Home Education</a></li>
+								<li> <a className="dropdown-item" href="index-4.html">Home Academy</a></li>
+								<li> <a className="dropdown-item" href="index-5.html">Home Course</a></li>
+								<li> <a className="dropdown-item" href="index-6.html">Home University</a></li>
+								<li> <a className="dropdown-item" href="index-7.html">Home Kindergarten</a></li>
+								<li> <a className="dropdown-item active" href="index-8.html">Home Landing</a></li>
+								<li> <a className="dropdown-item" href="index-9.html">Home Tutor</a></li>
+								<li> <a className="dropdown-item" href="index-10.html">Home School</a></li>
+								<li> <a className="dropdown-item" href="index-11.html">Home Abroad</a></li>
+								<li> <a className="dropdown-item" href="index-12.html">Home Workshop</a></li>
 							</ul>
 						</li>
 
 						{/* <!-- Nav item 2 Course --> */}
-						<li class="nav-item dropdown"><a class="nav-link" href="#">About us</a></li>
+						<li className="nav-item dropdown"><a className="nav-link" href="#">About us</a></li>
 
 						{/* <!-- Nav item 3 link--> */}
-						<li class="nav-item"><a class="nav-link" href="contact-us.html">Courses</a></li>
+						<li className="nav-item"><a className="nav-link" href="contact-us.html">Courses</a></li>
 					</ul>
 				</div>
 				{/* <!-- Main navbar END --> */}
 
 				{/* <!-- Dark mode options START --> */}
-				<div class="dropdown">
-					<button class="btn btn-light btn-sm lh-1 p-2 mb-0" id="bd-theme" type="button" aria-expanded="false"
+				<div className="dropdown">
+					<button className="btn btn-light btn-sm lh-1 p-2 mb-0" id="bd-theme" type="button" aria-expanded="false"
 						data-bs-toggle="dropdown" data-bs-display="static">
 						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
-							class="bi bi-circle-half fa-fw theme-icon-active" viewBox="0 0 16 16">
+							className="bi bi-circle-half fa-fw theme-icon-active" viewBox="0 0 16 16">
 							<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
 							<use href="#"></use>
 						</svg>
 					</button>
 
-					<ul class="dropdown-menu min-w-auto dropdown-menu-end" aria-labelledby="bd-theme">
-						<li class="mb-1">
-							<button type="button" class="dropdown-item d-flex align-items-center"
+					<ul className="dropdown-menu min-w-auto dropdown-menu-end" aria-labelledby="bd-theme">
+						<li className="mb-1">
+							<button type="button" className="dropdown-item d-flex align-items-center"
 								data-bs-theme-value="light">
 								<svg width="16" height="16" fill="currentColor"
-									class="bi bi-brightness-high-fill fa-fw mode-switch me-1" viewBox="0 0 16 16">
+									className="bi bi-brightness-high-fill fa-fw mode-switch me-1" viewBox="0 0 16 16">
 									<path
 										d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
 									<use href="#"></use>
 								</svg>Light
 							</button>
 						</li>
-						<li class="mb-1">
-							<button type="button" class="dropdown-item d-flex align-items-center"
+						<li className="mb-1">
+							<button type="button" className="dropdown-item d-flex align-items-center"
 								data-bs-theme-value="dark">
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-									class="bi bi-moon-stars-fill fa-fw mode-switch me-1" viewBox="0 0 16 16">
+									className="bi bi-moon-stars-fill fa-fw mode-switch me-1" viewBox="0 0 16 16">
 									<path
 										d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
 									<path
@@ -97,10 +97,10 @@ export default function Header() {
 							</button>
 						</li>
 						<li>
-							<button type="button" class="dropdown-item d-flex align-items-center active"
+							<button type="button" className="dropdown-item d-flex align-items-center active"
 								data-bs-theme-value="auto">
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-									class="bi bi-circle-half fa-fw mode-switch me-1" viewBox="0 0 16 16">
+									className="bi bi-circle-half fa-fw mode-switch me-1" viewBox="0 0 16 16">
 									<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
 									<use href="#"></use>
 								</svg>Auto
@@ -111,8 +111,8 @@ export default function Header() {
 				{/* <!-- Dark mode options END --> */}
 
 				{/* <!-- Signin button --> */}
-				<div class="navbar-nav ms-3 d-none d-sm-block">
-					<button class="btn btn-sm btn-dark mb-0">Contact us</button>
+				<div className="navbar-nav ms-3 d-none d-sm-block">
+					<button className="btn btn-sm btn-dark mb-0">Contact us</button>
 				</div>
 
 			</div>

@@ -6,6 +6,8 @@ import Banner from './component/layout/Banner'
 import Action from './component/layout/Action'
 import Footer from './component/layout/Footer'
 import Feedback from './component/layout/Feedback'
+import Offer from './component/layout/Offer'
+import Decoration from './component/layout/Decoration'
 import UnderDev from './component/underDev';
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
           <Route path='/action' element={<Action />} />
           <Route path='/footer' element={<Footer />} />
           <Route path='/feedback' element={<Feedback />} />
+          <Route path='/offer' element={<Offer />} />
+          <Route path='/decoration' element={<Decoration />} />
         </Routes>
       </Router>
     </>
