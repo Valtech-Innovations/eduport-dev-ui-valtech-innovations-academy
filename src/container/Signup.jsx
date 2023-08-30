@@ -29,14 +29,14 @@ export default function Signup() {
           <div className="container-fluid">
             <div className="row">
               {/* <!-- left --> */}
-              <div className="col-12 col-lg-6 d-md-flex align-items-center justify-content-center bg-primary bg-opacity-10 vh-lg-100">
-                <div className="p-3 p-lg-5">
+              <div className="col-12 col-lg-6 d-md-flex align-items-center justify-content-center bg-primary bg-opacity-10 vh-lg-100 ">
+                <div className="p-2 p-lg-5">
                   {/* <!-- Title --> */}
                   <div className="text-center">
                     <h2 className="fw-bold">
                       Welcome to our largest community
                     </h2>
-                    <p className="mb-0 h6 fw-light">
+                    <p className=" h6 fw-light">
                       Let's learn something new today!
                     </p>
                   </div>
@@ -79,7 +79,7 @@ export default function Signup() {
                       </li>
                     </ul>
                     {/* <!-- Content --> */}
-                    <p className="mb-0 h6 fw-light ms-0 ms-sm-3">
+                    <p className=" h6 fw-light ms-0 ms-sm-3">
                       4k+ Students joined us, now it's your turn.
                     </p>
                   </div>
@@ -87,8 +87,8 @@ export default function Signup() {
               </div>
 
               {/* <!-- Right --> */}
-              <div className="col-12 col-lg-6 m-auto">
-                <div className="row my-5 mt-3">
+              <div className="col-12 col-lg-6 m-0 ">
+                <div className="row my-0 mt-2">
                   <div className="col-sm-10 col-xl-8 m-auto">
                     {/* <!-- Title --> */}
                     <h2>Sign up for your account!</h2>
@@ -106,13 +106,13 @@ export default function Signup() {
                         >
                           Email address *
                         </label>
-                        <div className="input-group input-group-lg">
+                        <div className="input-group input-group-md">
                           <span className="input-group-text bg-light rounded-start border-0 text-secondary px-3">
                             <i className="bi bi-envelope-fill"></i>
                           </span>
                           <input
                             type="email"
-                            className="form-control border-0 bg-light rounded-end ps-1 m-0 "
+                            className="form-control border-0 bg-light rounded-end ps-1 m-0"
                             placeholder="E-mail"
                             id="exampleInputEmail1"
                             {...register("email", { required: true })}
@@ -127,7 +127,7 @@ export default function Signup() {
                         >
                           Mobile Number *
                         </label>
-                        <div className="input-group input-group-lg">
+                        <div className="input-group input-group-md">
                           <span className="input-group-text bg-light rounded-start border-0 text-secondary px-3">
                             <i className="bi bi-envelope-fill"></i>
                           </span>
@@ -145,7 +145,7 @@ export default function Signup() {
                         <label htmlFor="inputPassword5" className="form-label">
                           Password *
                         </label>
-                        <div className="input-group input-group-lg">
+                        <div className="input-group input-group-md">
                           <span className="input-group-text bg-light rounded-start border-0 text-secondary px-3">
                             <i className="fas fa-lock"></i>
                           </span>
@@ -163,7 +163,7 @@ export default function Signup() {
                         <label htmlFor="inputPassword6" className="form-label">
                           Confirm Password *
                         </label>
-                        <div className="input-group input-group-lg">
+                        <div className="input-group input-group-md">
                           <span className="input-group-text bg-light rounded-start border-0 text-secondary px-3">
                             <i className="fas fa-lock"></i>
                           </span>
@@ -196,10 +196,10 @@ export default function Signup() {
                         </div>
                       </div>
                       {/* <!-- Button --> */}
-                      <div className="align-items-center mt-0 mb-0">
+                      <div className="align-items-center mt-0 ">
                         <div className="d-grid">
                           <button
-                            className="btn btn-primary mb-0"
+                            className="btn btn-primary mb-0 "
                             type="submit"
                           >
                             Sign Up
@@ -210,9 +210,9 @@ export default function Signup() {
                     {/* <!-- Form END --> */}
 
                     {/* <!-- Social buttons --> */}
-                    <div className="row">
+                    <div className="row mt-0">
                       {/* <!-- Divider with text --> */}
-                      <div className="position-relative my-4 mt-0 mb-0">
+                      <div className="position-relative my-4 mt-0 ">
                         <hr />
                         <p className="small position-absolute top-50 start-50 translate-middle bg-body px-5">
                           Or
@@ -227,7 +227,7 @@ export default function Signup() {
                       </div>
                       {/* <!-- Social btn --> */}
                       <div className="col-xxl-6 d-grid">
-                        <a href="#" className="btn bg-facebook mb-0">
+                        <a href="#" className="btn bg-facebook ">
                           <i className="fab fa-brands fa-github text-white me-2"></i>
                           Signup with GitHub
                         </a>
@@ -235,7 +235,7 @@ export default function Signup() {
                     </div>
 
                     {/* <!-- Sign up link --> */}
-                    <div className="mt-2 text-center">
+                    <div className="mt-0 mb-0 text-center">
                       <span>
                         Already have an account?
                         <a href="sign-in.html"> Sign in here</a>
