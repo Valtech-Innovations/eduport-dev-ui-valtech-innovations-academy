@@ -22,73 +22,7 @@ Page Banner START --> */}
 					</div>
 
 					{/* <!-- Contact info box --> */}
-					<div className="row g-4 g-md-5 mt-0 mt-lg-3">
-						{/* <!-- Box item --> */}
-						<div className="col-lg-4 mt-lg-0">
-							<div className="card card-body bg-primary shadow py-5 text-center h-100">
-								{/* <!-- Title --> */}
-								<h5 className="text-white mb-3">Customer Support</h5>
-								<ul className="list-inline mb-0">
-									{/* <!-- Address --> */}
-									<li className="list-item mb-3">
-										<a href="#" className="text-white"> <i className="fas fa-fw fa-map-marker-alt me-2 mt-1"></i>Chicago HQ Estica Cop.  Macomb, MI 48042 </a>
-									</li>
-									{/* <!-- Phone number --> */}
-									<li className="list-item mb-3">
-										<a href="#" className="text-white"> <i className="fas fa-fw fa-phone-alt me-2"></i>(423) 733-8222 </a>
-									</li>
-									{/* <!-- Email id --> */}
-									<li className="list-item mb-0">
-										<a href="#" className="text-white"> <i className="far fa-fw fa-envelope mailto:me-2"></i>example@email.com </a>
-									</li>
-								</ul>
-							</div>
-						</div>
-
-						{/* <!-- Box item --> */}
-						<div className="col-lg-4 mt-lg-0">
-							<div className="card card-body shadow py-5 text-center h-100">
-								{/* <!-- Title --> */}
-								<h5 className="mb-3">Contact Address</h5>
-								<ul className="list-inline mb-0">
-									{/* <!-- Address --> */}
-									<li className="list-item mb-3 h6 fw-light">
-										<a href="#"> <i className="fas fa-fw fa-map-marker-alt me-2 mt-1"></i>2492 Centennial NW, Acworth, GA, 30102 </a>
-									</li>
-									{/* <!-- Phone number --> */}
-									<li className="list-item mb-3 h6 fw-light">
-										<a href="#"> <i className="fas fa-fw fa-phone-alt me-2"></i>+896-789-546 </a>
-									</li>
-									{/* <!-- Email id --> */}
-									<li className="list-item mb-0 h6 fw-light">
-										<a href="#"> <i className="far fa-fw fa-envelope mailto:me-2"></i>example@email.com </a>
-									</li>
-								</ul>
-							</div>
-						</div>
-
-						{/* <!-- Box item --> */}
-						<div className="col-lg-4 mt-lg-0">
-							<div className="card card-body shadow py-5 text-center h-100">
-								{/* <!-- Title --> */}
-								<h5 className="mb-3">Main Office Address</h5>
-								<ul className="list-inline mb-0">
-									{/* <!-- Address --> */}
-									<li className="list-item mb-3 h6 fw-light">
-										<a href="#"> <i className="fas fa-fw fa-map-marker-alt me-2 mt-1"></i>2002 Horton Ford Rd, Eidson, TN, 37731 </a>
-									</li>
-									{/* <!-- Phone number --> */}
-									<li className="list-item mb-3 h6 fw-light">
-										<a href="#"> <i className="fas fa-fw fa-phone-alt me-2"></i>(678) 324-1251 </a>
-									</li>
-									{/* <!-- Email id --> */}
-									<li className="list-item mb-0 h6 fw-light">
-										<a href="#"> <i className="far fa-fw fa-envelope mailto:me-2"></i>example@email.com </a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
+					
 				</div>
 			</section>
 			{/* <!-- =======================
@@ -161,7 +95,7 @@ Image and contact form START --> */}
 
 			{/* <!-- ======================= */}
 			{/* Map START --> */}
-			<section className="pt-0">
+			{/* <section className="pt-0">
 				<div className="container">
 					<div className="row">
 						<div className="col-12">
@@ -169,7 +103,7 @@ Image and contact form START --> */}
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> */}
 			{/* <!-- ======================= */}
 			{/* Map END --> */}
 
