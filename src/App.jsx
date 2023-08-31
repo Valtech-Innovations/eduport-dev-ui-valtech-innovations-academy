@@ -9,6 +9,7 @@ import Feedback from './component/layout/Feedback'
 import Offer from './component/layout/Offer'
 import Decoration from './component/layout/Decoration'
 import UnderDev from './component/underDev';
+import Layout from './component/layout/Layout';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<UnderDev />} />
+          <Route path='home' element={<Layout />} />
           <Route path='/sign-up' element={<Signup />} />
           <Route path='/sign-in' element={<Signin />} />
           <Route path='/header' element={<Header />} />
