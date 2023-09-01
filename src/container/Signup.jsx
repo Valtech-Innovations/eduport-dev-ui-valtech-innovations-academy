@@ -87,7 +87,7 @@ export default function Signup() {
               </div>
 
               {/* <!-- Right --> */}
-              <div className="col-12 col-lg-6 m-0 ">
+              <div className="col-12 col-lg-6 m-auto ">
                 <div className="row my-0 mt-2">
                   <div className="col-sm-10 col-xl-8 m-auto">
                     {/* <!-- Title --> */}
