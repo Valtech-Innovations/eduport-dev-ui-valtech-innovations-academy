@@ -10,8 +10,9 @@ export default function Header() {
 			<div className="container">
 				{/* <!-- Logo START --> */}
 				<a className="navbar-brand me-0" href="index-2.html">
-					<img className="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo" />
-					<img className="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo" />
+					
+					{/* <img className="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo" />
+					<img className="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo" /> */}
 				</a>
 				{/* <!-- Logo END --> */}
 
@@ -112,7 +113,10 @@ export default function Header() {
 
 				{/* <!-- Signin button --> */}
 				<div className="navbar-nav ms-3 d-none d-sm-block">
-					<button className="btn btn-sm btn-dark mb-0">Contact us</button>
+				<ul className="dropdown-menu dropdown-menu-end" aria-labelledby="demoMenu">
+				<li className="nav-item"><a className="nav-link" href="contact-us.html">Courses</a></li>
+				</ul>
+					<button className="btn btn-sm btn-dark mb-0">Apply Now</button>
 				</div>
 
 			</div>
