@@ -12,10 +12,10 @@ function App() {
 
       <Router>
         <Routes>
-{/*          
+         
           <Route path="/" element={<UnderDev />} />
           <Route path='/sign-up' element={<Signup />} />
-          <Route path='/sign-in' element={<Signin />} /> */}
+          <Route path='/sign-in' element={<Signin />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
       </Router>
