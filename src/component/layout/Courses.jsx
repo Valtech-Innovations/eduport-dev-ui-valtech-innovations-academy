@@ -8,7 +8,7 @@ export default function Courses() {
             {/* <!-- Action box item --> */}
             <div class="col-lg-12 ">
               <div class=" rounded-3 p-5 w-100vw  d-flex flex-row justify-content-around ">
-				<h1></h1>
+				{/* <h2>Courses We Offer</h2> */}
                 {/* <!-- Image --> */}
                 <div class=" bottom-0 end-0 m-auto">
                   <img
@@ -19,12 +19,12 @@ export default function Courses() {
                 </div>
                 {/* <!-- Content --> */}
                   <div class="col-lg-6 m-auto">
-                    <h3 class="mb-1">Earn a Certificate</h3>
+                    <h3 class="mb-1">Full Stack With Javascript (MERN Stack)</h3>
                     <p class="mb-3 h5 fw-light lead">
                       Get the right professional certificate program for you.
                     </p>
                     <a href="#" class="btn btn-primary mb-0">
-                      View Programs
+                     Explore Course
                     </a>
                 </div>
               </div>
@@ -40,7 +40,7 @@ export default function Courses() {
                       Enroll now in the most popular and best rated courses.
                     </p>
                     <a href="#" class="btn btn-warning mb-0">
-                      View Courses
+                    Explore Course
                     </a>
                   </div>
                 {/* <!-- Content --> */}
