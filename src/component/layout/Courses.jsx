@@ -7,6 +7,8 @@ export default function Courses() {
           <div class="row  d-flex flex-column justify-content-evenly">
             {/* <!-- Action box item --> */}
             <div class="col-lg-12 ">
+            <h1 class="text-center">Courses We Offer</h1>
+            <hr/>
               <div class=" rounded-3 p-5 w-100vw  d-flex flex-row justify-content-around ">
 				{/* <h2>Courses We Offer</h2> */}
                 {/* <!-- Image --> */}
@@ -21,7 +23,11 @@ export default function Courses() {
                   <div class="col-lg-6 m-auto">
                     <h3 class="mb-1">Full Stack With Javascript (MERN Stack)</h3>
                     <p class="mb-3 h5 fw-light lead">
-                      Get the right professional certificate program for you.
+                      A Comprehensive programing coursen that takes you though fontend, backend , and  database technology<br/>
+                                        Work on live project with constant guidence from experienced engineers & your program mentor.
+                                        This course ensures that you grasp that core principles of programming and get the right know 
+                                        how to be a complete all-rounder.
+                                                                                
                     </p>
                     <a href="#" class="btn btn-primary mb-0">
                      Explore Course
@@ -35,9 +41,12 @@ export default function Courses() {
               <div class=" rounded-3 p-5 h-100 d-flex flex-row justify-content-around">
                 {/* <!-- Image --> */}
                   <div class="col-lg-6 m-auto">
-                    <h3 class="mb-1">Best Rated Courses</h3>
+                    <h3 class="mb-1">Full Stack With Python</h3>
                     <p class="mb-3 h5 fw-light lead">
-                      Enroll now in the most popular and best rated courses.
+                      This python program takes you through the integral fuction of creating & maintaining 
+                      the most popular backend technology.<br/>
+                      We open up the doors to understanding backend programming with real-world examples and 
+                      competitive coding chanllenges. 
                     </p>
                     <a href="#" class="btn btn-warning mb-0">
                     Explore Course
