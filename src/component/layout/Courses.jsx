@@ -7,10 +7,9 @@ export default function Courses() {
           <div class="row  d-flex flex-column justify-content-evenly">
             {/* <!-- Action box item --> */}
             <div class="col-lg-12 ">
-            <h1 class="text-center">Courses We Offer</h1>
+            <h2 class="text-center">Courses We Offer</h2>
             <hr/>
               <div class=" rounded-3 p-5 w-100vw  d-flex flex-row justify-content-around ">
-				{/* <h2>Courses We Offer</h2> */}
                 {/* <!-- Image --> */}
                 <div class=" bottom-0 end-0 m-auto">
                   <img
