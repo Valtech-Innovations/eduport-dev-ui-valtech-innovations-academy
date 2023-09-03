@@ -129,7 +129,7 @@ export default function Signup() {
                         </label>
                         <div className="input-group input-group-md">
                           <span className="input-group-text bg-light rounded-start border-0 text-secondary px-3">
-                            <i className="bi bi-envelope-fill"></i>
+                            <i class="bi bi-telephone-fill"></i>
                           </span>
                           <input
                             type="number"
@@ -235,7 +235,7 @@ export default function Signup() {
                     </div>
 
                     {/* <!-- Sign up link --> */}
-                    <div className="mt-0 mb-0 text-center">
+                    <div className="mt-4 mb-0 text-center">
                       <span>
                         Already have an account?
                         <a href="sign-in.html"> Sign in here</a>
