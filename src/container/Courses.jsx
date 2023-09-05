@@ -11,10 +11,10 @@ export default function Courses() {
             <hr/>
               <div class=" rounded-3 p-5 w-100vw  d-flex flex-row justify-content-around ">
                 {/* <!-- Image --> */}
-                <div class=" bottom-0 end-0 m-auto">
+                <div class=" bottom-0 end-0 m-auto ">
                   <img
                     src="assets/images/element/08.svg"
-                    class="h-100px h-sm-200px"
+                    class="h-100px h-sm-200px img-fluid"
                     alt=""
                   />
                 </div>

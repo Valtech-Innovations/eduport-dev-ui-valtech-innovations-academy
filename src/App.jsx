@@ -1,15 +1,14 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './component/layout/Header'
+import Footer from './component/layout/Footer'
 import Signup from './container/Signup';
 import Signin from './container/Signin';
-import Header from './component/layout/Header'
-import Banner from './component/layout/Banner'
-import Action from './component/layout/Action'
-import Footer from './component/layout/Footer'
-import Feedback from './component/layout/Feedback'
-import Instructor from './component/layout/Instructor'
-import Decoration from './component/layout/Decoration'
+import Courses from './container/Courses';
+import Action from './container/Action';
+import Banner from './container/Banner';
+import Decoration from './container/Decoration';
+import Feedback from './container/Feedback';
 import UnderDev from './component/underDev';
-import Courses from './component/layout/Courses';
 
 function App() {
 
@@ -29,7 +28,7 @@ function App() {
           <Route path='/feedback' element={<Feedback />} />
           <Route path='/courses' element={<Courses />} />
           <Route path='/decoration' element={<Decoration />} />
-          <Route path='/Instructor' element={<Instructor />} />
+          {/* <Route path='/Instructor' element={<Instructor />} /> */}
         </Routes>
       </Router>
     </>
