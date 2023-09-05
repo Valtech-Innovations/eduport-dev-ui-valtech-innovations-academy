@@ -81,7 +81,7 @@ export default function Signin() {
                           htmlFor="exampleInputEmail1"
                           className="form-label"
                         >
-                          Email address *
+                          Email address / Mobile Number *
                         </label>
                         <div className="input-group input-group-lg">
                           <span className="input-group-text bg-light rounded-start border-0 text-secondary px-3">
@@ -157,15 +157,15 @@ export default function Signin() {
                       </div>
 
                       <div className="col-xxl-6 d-grid">
-                        <a href="#" className="btn bg-google mb-2 mb-xxl-0">
+                        <a href="#" className="btn bg-google">
                           <i className="fab fa-fw fa-google text-white me-2"></i>
                           Login with Google
                         </a>
                       </div>
                       <div className="col-xxl-6 d-grid">
-                        <a href="#" className="btn bg-facebook mb-0">
+                        <a href="#" className="btn bg-facebook">
                           <i className="fab fa-brands fa-github text-white  me-2"></i>
-                          Signup with GitHub
+                          Login with GitHub
                         </a>
                       </div>
                     </div>

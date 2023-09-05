@@ -179,7 +179,7 @@ export default function Signup() {
                         </div>
                       </div>
                       {/* <!-- Check box --> */}
-                      <div className="mb-2">
+                      <div className="mb-2 mt-4">
                         <div className="form-check">
                           <input
                             type="checkbox"
@@ -196,7 +196,7 @@ export default function Signup() {
                         </div>
                       </div>
                       {/* <!-- Button --> */}
-                      <div className="align-items-center mt-0 ">
+                      <div className="align-items-center mt-2 ">
                         <div className="d-grid">
                           <button
                             className="btn btn-primary mb-0 "
@@ -220,7 +220,7 @@ export default function Signup() {
                       </div>
                       {/* <!-- Social btn --> */}
                       <div className="col-xxl-6 d-grid">
-                        <a href="#" className="btn bg-google mb-2 mb-xxl-0">
+                        <a href="#" className="btn bg-google">
                           <i className="fab fa-fw fa-google text-white me-2"></i>
                           Signup with Google
                         </a>
