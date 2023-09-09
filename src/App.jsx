@@ -3,24 +3,13 @@ import Header from './component/layout/Header'
 import Footer from './component/layout/Footer'
 import Signup from './container/Signup';
 import Signin from './container/Signin';
-<<<<<<< HEAD
 import Courses from './container/Courses';
 import Action from './container/Action';
 import Banner from './container/Banner';
 import Decoration from './container/Decoration';
 import Feedback from './container/Feedback';
+import Instructor from './container/Instructor';
 import UnderDev from './component/underDev';
-=======
-import Header from './component/layout/Header'
-import Footer from './component/layout/Footer'
-import Banner from './container/Banner';
-import Action from './container/Action';
-import Feedback from './container/Feedback';
-import Decoration from './container/Decoration';
-import Courses from './container/Courses';
-import UnderDev from './component/underDev';
-
->>>>>>> 1c0fafb8bd8e817639ab56146d61363920ebee92
 
 function App() {
 
@@ -40,7 +29,7 @@ function App() {
           <Route path='/feedback' element={<Feedback />} />
           <Route path='/courses' element={<Courses />} />
           <Route path='/decoration' element={<Decoration />} />
-          {/* <Route path='/Instructor' element={<Instructor />} /> */}
+          <Route path='/Instructor' element={<Instructor />} />
         </Routes>
       </Router>
     </>
