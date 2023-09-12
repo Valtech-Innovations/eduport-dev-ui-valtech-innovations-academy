@@ -11,6 +11,7 @@ import Feedback from './container/Feedback';
 import Instructor from './container/Instructor';
 import UnderDev from './component/underDev';
 import Layout from './component/layout/Layout';
+import Home from './pages/Home';
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<UnderDev />} />
-          <Route path='home' element={<Layout />} />
+          <Route path='home' element={<Home/>} />
           <Route path='/sign-up' element={<Signup />} />
           <Route path='/sign-in' element={<Signin />} />
           <Route path='/header' element={<Header />} />
