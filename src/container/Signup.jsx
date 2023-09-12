@@ -1,138 +1,253 @@
-import React, { useEffect } from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { responsivePropType } from "react-bootstrap/esm/createUtilityClasses";
+import { useForm } from "react-hook-form";
 export default function Signup() {
+  const[formData , setFormData] = useState([])
+  const { register, handleSubmit, reset } = useForm();
 
-	return (
-		<>
-			<main>
-				<section className="p-0 d-flex align-items-center position-relative overflow-hidden">
+  const onSubmit = (data) => {
+    console.log(data);
+    setFormData({...formData,data})
+    reset();
+  };
+  console.log("form data is: ",formData)
+  useEffect(()=>{
+    axios.post("",formData)
+    .then((response)=>{
+      console.log("response is: ",response.data)
+    })
+    .catch((err)=>{
+      console.log("Some error occured...",err)
+    })
+  })
 
-					<div className="container-fluid">
-						<div className="row">
-							{/* <!-- left --> */}
-							<div
-								className="col-12 col-lg-6 d-md-flex align-items-center justify-content-center bg-primary bg-opacity-10 vh-lg-100">
-								<div className="p-3 p-lg-5">
-									{/* <!-- Title --> */}
-									<div className="text-center">
-										<h2 className="fw-bold">Welcome to our largest community</h2>
-										<p className="mb-0 h6 fw-light">Let's learn something new today!</p>
-									</div>
-									{/* <!-- SVG Image --> */}
-									<img src='assets/images/element/02.svg' className="mt-5" alt="" />
-									{/* <!-- Info --> */}
-									<div className="d-sm-flex mt-5 align-items-center justify-content-center">
-										<ul className="avatar-group mb-2 mb-sm-0">
-											<li className="avatar avatar-sm"><img className="avatar-img rounded-circle"
-												src="assets/images/avatar/01.jpg" alt="avatar" /></li>
-											<li className="avatar avatar-sm"><img className="avatar-img rounded-circle"
-												src="assets/images/avatar/02.jpg" alt="avatar" /></li>
-											<li className="avatar avatar-sm"><img className="avatar-img rounded-circle"
-												src="assets/images/avatar/03.jpg" alt="avatar" /></li>
-											<li className="avatar avatar-sm"><img className="avatar-img rounded-circle"
-												src="assets/images/avatar/04.jpg" alt="avatar" /></li>
-										</ul>
-										{/* <!-- Content --> */}
-										<p className="mb-0 h6 fw-light ms-0 ms-sm-3">4k+ Students joined us, now it's your turn.</p>
-									</div>
-								</div>
-							</div>
+  return (
+    <>
+      <main>
+        <section className="p-0 d-flex align-items-center position-relative overflow-hidden">
+          <div className="container-fluid">
+            <div className="row">
+              {/* <!-- left --> */}
+              <div className="col-12 col-lg-6 d-md-flex align-items-center justify-content-center bg-primary bg-opacity-10 vh-lg-100 ">
+                <div className="p-2 p-lg-5">
+                  {/* <!-- Title --> */}
+                  <div className="text-center">
+                    <h2 className="fw-bold">
+                      Welcome to our largest community
+                    </h2>
+                    <p className=" h6 fw-light">
+                      Let's learn something new today!
+                    </p>
+                  </div>
+                  {/* <!-- SVG Image --> */}
+                  <img
+                    src="assets/images/element/02.svg"
+                    className="mt-5"
+                    alt=""
+                  />
+                  {/* <!-- Info --> */}
+                  <div className="d-sm-flex mt-5 align-items-center justify-content-center">
+                    <ul className="avatar-group mb-2 mb-sm-0">
+                      <li className="avatar avatar-sm">
+                        <img
+                          className="avatar-img rounded-circle"
+                          src="assets/images/avatar/01.jpg"
+                          alt="avatar"
+                        />
+                      </li>
+                      <li className="avatar avatar-sm">
+                        <img
+                          className="avatar-img rounded-circle"
+                          src="assets/images/avatar/02.jpg"
+                          alt="avatar"
+                        />
+                      </li>
+                      <li className="avatar avatar-sm">
+                        <img
+                          className="avatar-img rounded-circle"
+                          src="assets/images/avatar/03.jpg"
+                          alt="avatar"
+                        />
+                      </li>
+                      <li className="avatar avatar-sm">
+                        <img
+                          className="avatar-img rounded-circle"
+                          src="assets/images/avatar/04.jpg"
+                          alt="avatar"
+                        />
+                      </li>
+                    </ul>
+                    {/* <!-- Content --> */}
+                    <p className=" h6 fw-light ms-0 ms-sm-3">
+                      4k+ Students joined us, now it's your turn.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-							{/* <!-- Right --> */}
-							<div className="col-12 col-lg-6 m-auto">
-								<div className="row my-5">
-									<div className="col-sm-10 col-xl-8 m-auto">
-										{/* <!-- Title --> */}
-										<img src="assets/images/element/03.svg" className="h-40px mb-2" alt="" />
-										<h2>Sign up for your account!</h2>
-										<p className="lead mb-4">Nice to see you! Please Sign up with your account.</p>
+              {/* <!-- Right --> */}
+              <div className="col-12 col-lg-6 m-auto ">
+                <div className="row my-0 mt-2">
+                  <div className="col-sm-10 col-xl-8 m-auto">
+                    {/* <!-- Title --> */}
+                    <h2>Sign up for your account!</h2>
+                    <p className="lead mb-2">
+                      Nice to see you! Please Sign up with your account.
+                    </p>
 
-										{/* <!-- Form START --> */}
-										<form>
-											{/* <!-- Email --> */}
-											<div className="mb-4">
-												<label htmlFor="exampleInputEmail1" className="form-label">Email address *</label>
-												<div className="input-group input-group-lg">
-													<span
-														className="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i
-															className="bi bi-envelope-fill"></i></span>
-													<input type="email" className="form-control border-0 bg-light rounded-end ps-1"
-														placeholder="E-mail" id="exampleInputEmail1" />
-												</div>
-											</div>
-											{/* <!-- Password --> */}
-											<div className="mb-4">
-												<label htmlFor="inputPassword5" className="form-label">Password *</label>
-												<div className="input-group input-group-lg">
-													<span
-														className="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i
-															className="fas fa-lock"></i></span>
-													<input type="password"
-														className="form-control border-0 bg-light rounded-end ps-1"
-														placeholder="*********" id="inputPassword5" />
-												</div>
-											</div>
-											{/* <!-- Confirm Password --> */}
-											<div className="mb-4">
-												<label htmlFor="inputPassword6" className="form-label">Confirm Password *</label>
-												<div className="input-group input-group-lg">
-													<span
-														className="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i
-															className="fas fa-lock"></i></span>
-													<input type="password"
-														className="form-control border-0 bg-light rounded-end ps-1"
-														placeholder="*********" id="inputPassword6" />
-												</div>
-											</div>
-											{/* <!-- Check box --> */}
-											<div className="mb-4">
-												<div className="form-check">
-													<input type="checkbox" className="form-check-input" id="checkbox-1" />
-													<label className="form-check-label" htmlFor="checkbox-1">By signing up, you agree to
-														the<a href="#"> terms of service</a></label>
-												</div>
-											</div>
-											{/* <!-- Button --> */}
-											<div className="align-items-center mt-0">
-												<div className="d-grid">
-													<button className="btn btn-primary mb-0" type="button">Sign Up</button>
-												</div>
-											</div>
-										</form>
-										{/* <!-- Form END --> */}
+                    {/* <!-- Form START --> */}
+                    <form onSubmit={handleSubmit(onSubmit)}>
+                      {/* <!-- Email --> */}
+                      <div className="mb-2">
+                        <label
+                          htmlFor="exampleInputEmail1"
+                          className="form-label"
+                        >
+                          Email address *
+                        </label>
+                        <div className="input-group input-group-md">
+                          <span className="input-group-text bg-light rounded-start border-0 text-secondary px-3">
+                            <i className="bi bi-envelope-fill"></i>
+                          </span>
+                          <input
+                            type="email"
+                            className="form-control border-0 bg-light rounded-end ps-1 m-0"
+                            placeholder="E-mail"
+                            id="exampleInputEmail1"
+                            {...register("email", { required: true })}
+                          />
+                        </div>
+                      </div>
+                      {/* Mobile Number */}
+                      <div className="mb-2">
+                        <label
+                          htmlFor="exampleInputEmail1"
+                          className="form-label"
+                        >
+                          Mobile Number *
+                        </label>
+                        <div className="input-group input-group-md">
+                          <span className="input-group-text bg-light rounded-start border-0 text-secondary px-3">
+                            <i class="bi bi-telephone-fill"></i>
+                          </span>
+                          <input
+                            type="number"
+                            className="form-control border-0 bg-light rounded-end ps-1"
+                            placeholder="Mobile number"
+                            id="exampleInputMobileNumber"
+                            {...register("Mobile Number")}
+                          />
+                        </div>
+                      </div>
+                      {/* <!-- Password --> */}
+                      <div className="mb-2">
+                        <label htmlFor="inputPassword5" className="form-label">
+                          Password *
+                        </label>
+                        <div className="input-group input-group-md">
+                          <span className="input-group-text bg-light rounded-start border-0 text-secondary px-3">
+                            <i className="fas fa-lock"></i>
+                          </span>
+                          <input
+                            type="password"
+                            className="form-control border-0 bg-light rounded-end ps-1"
+                            placeholder="*********"
+                            id="inputPassword5"
+                            {...register("password", { required: true })}
+                          />
+                        </div>
+                      </div>
+                      {/* <!-- Confirm Password --> */}
+                      <div className="mb-2">
+                        <label htmlFor="inputPassword6" className="form-label">
+                          Confirm Password *
+                        </label>
+                        <div className="input-group input-group-md">
+                          <span className="input-group-text bg-light rounded-start border-0 text-secondary px-3">
+                            <i className="fas fa-lock"></i>
+                          </span>
+                          <input
+                            type="password"
+                            className="form-control border-0 bg-light rounded-end ps-1"
+                            placeholder="*********"
+                            id="inputPassword6"
+                            {...register("Confirm password", {
+                              required: true,
+                            })}
+                          />
+                        </div>
+                      </div>
+                      {/* <!-- Check box --> */}
+                      <div className="mb-2 mt-4">
+                        <div className="form-check">
+                          <input
+                            type="checkbox"
+                            className="form-check-input"
+                            id="checkbox-1"
+                          />
+                          <label
+                            className="form-check-label"
+                            htmlFor="checkbox-1"
+                          >
+                            By signing up, you agree to the
+                            <a href="#"> terms of service</a>
+                          </label>
+                        </div>
+                      </div>
+                      {/* <!-- Button --> */}
+                      <div className="align-items-center mt-2 ">
+                        <div className="d-grid">
+                          <button
+                            className="btn btn-primary mb-0 "
+                            type="submit"
+                          >
+                            Sign Up
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                    {/* <!-- Form END --> */}
 
-										{/* <!-- Social buttons --> */}
-										<div className="row">
-											{/* <!-- Divider with text --> */}
-											<div className="position-relative my-4">
-												<hr />
-												<p
-													className="small position-absolute top-50 start-50 translate-middle bg-body px-5">
-													Or</p>
-											</div>
-											{/* <!-- Social btn --> */}
-											<div className="col-xxl-6 d-grid">
-												<a href="#" className="btn bg-google mb-2 mb-xxl-0"><i
-													className="fab fa-fw fa-google text-white me-2"></i>Signup with Google</a>
-											</div>
-											{/* <!-- Social btn --> */}
-											<div className="col-xxl-6 d-grid">
-												<a href="#" className="btn bg-facebook mb-0"><i
-													className="fab fa-fw fa-facebook-f me-2"></i>Signup with Facebook</a>
-											</div>
-										</div>
+                    {/* <!-- Social buttons --> */}
+                    <div className="row mt-0">
+                      {/* <!-- Divider with text --> */}
+                      <div className="position-relative my-4 mt-0 ">
+                        <hr />
+                        <p className="small position-absolute top-50 start-50 translate-middle bg-body px-5">
+                          Or
+                        </p>
+                      </div>
+                      {/* <!-- Social btn --> */}
+                      <div className="col-xxl-6 d-grid">
+                        <a href="#" className="btn bg-google">
+                          <i className="fab fa-fw fa-google text-white me-2"></i>
+                          Signup with Google
+                        </a>
+                      </div>
+                      {/* <!-- Social btn --> */}
+                      <div className="col-xxl-6 d-grid">
+                        <a href="#" className="btn bg-facebook ">
+                          <i className="fab fa-brands fa-github text-white me-2"></i>
+                          Signup with GitHub
+                        </a>
+                      </div>
+                    </div>
 
-										{/* <!-- Sign up link --> */}
-										<div className="mt-4 text-center">
-											<span>Already have an account?<a href="sign-in.html"> Sign in here</a></span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-			</main>
-
-		</>
-	);
+                    {/* <!-- Sign up link --> */}
+                    <div className="mt-4 mb-0 text-center">
+                      <span>
+                        Already have an account?
+                        <a href="sign-in.html"> Sign in here</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </>
+  );
 }

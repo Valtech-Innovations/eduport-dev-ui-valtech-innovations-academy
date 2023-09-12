@@ -12,6 +12,10 @@ import Instructor from './container/Instructor';
 import UnderDev from './component/underDev';
 import Layout from './component/layout/Layout';
 import Home from './pages/Home';
+// import Signin from './container/Signin';
+import UnderDev from './component/underDev';
+import ForgetPassword from './container/ForgetPassword';
+import Signin from './container/Signin';
 
 function App() {
 
@@ -33,6 +37,7 @@ function App() {
           <Route path='/courses' element={<Courses />} />
           <Route path='/decoration' element={<Decoration />} />
           <Route path='/Instructor' element={<Instructor />} />
+          <Route path='/forget-password' element={<ForgetPassword />} />
         </Routes>
       </Router>
     </>
