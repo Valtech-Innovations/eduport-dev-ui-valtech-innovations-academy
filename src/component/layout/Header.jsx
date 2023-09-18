@@ -17,10 +17,10 @@ export default function Header() {
 				{/* <!-- Logo END --> */}
 
 				{/* <!-- Responsive navbar toggler --> */}
-				<button className="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+				<button className="navbar-toggler ms-auto scroll-padding-top: 75px; overflow: hidden;" type="button" data-bs-toggle="collapse"
 					data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
 					aria-label="Toggle navigation">
-					<span className="navbar-toggler-animation">
+					<span className="navbar-toggler-animation ">
 						<span></span>
 						<span></span>
 						<span></span>
